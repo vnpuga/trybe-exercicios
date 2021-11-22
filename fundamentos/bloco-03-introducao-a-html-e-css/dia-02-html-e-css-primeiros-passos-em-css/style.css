@@ -1,0 +1,38 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-decoration: rgb(94, 60, 117);
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+
+ul{
+    background-color: aquamarine;
+    line-height: 40px;
+}
+
+.list-paragraph{
+   background-color: rgb(216, 195, 235); 
+}
+
+body{
+  font-size: 16px;
+}
+
+#amarelo {
+  background-color: yellow;
+}
+
+#vermelho {
+  background-color: red;
+}
+
+#marrom {
+  background-color: brown;
+}

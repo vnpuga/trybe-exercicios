@@ -7,7 +7,7 @@ let names = {
   };
 
   for (let key in names) {
-    console.log('Olá ' + names[key] + ', seja bem vindo!');
+    console.log('Olá ' + names[key] + ', seja bem vinda(o)!');
   }
 
 

@@ -1,0 +1,35 @@
+body{
+  background-color: blanchedalmond;
+}
+
+table, th, td{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+header, nav{
+  text-align: center;
+}  
+
+.principal{
+  display: inline-block;
+  width: 70%;
+  padding: 20px;
+
+}
+
+.lateral{
+  display: inline-block;
+  position: absolute;
+  float: right;
+  width: 25%;
+  padding: 20px;
+  border: 1px solid grey;
+  text-align: center;
+  margin-top: 120px;
+  background-color:rgb(215, 225, 240);
+}
+
+footer{
+  text-align: center;
+}

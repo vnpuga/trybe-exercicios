@@ -27,6 +27,6 @@ let player = {
 
   player.bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
 
-  console.log('A jogadora ' + player.name + ' ' + player.lastName + 'foi eleita a melhor do mundo por ' + player.bestInTheWorld.lengt + " vezes");
+  console.log('A jogadora ' + player.name + ' ' + player.lastName + 'foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + " vezes");
 
-  console.log('A jogadora possui ' + player.medals.golden + ' medalhas de ouro');
+  console.log('A jogadora possui ' + player.medals.golden + ' medalhas de ouro ' + player.medals.silver + ' medalhas de prata.') ;

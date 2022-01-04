@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS - Forms</title>
+</head>
+<body>
+  <h1>Criando tela de login</h1>
+  <!-- 1 - Adicione os campos de entrada para email e senha. -->
+  <label for="input-email">E-mail
+    <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" required autocomplete="off" autofocus>
+  </label>
+  <br>
+  <label for="input-senha">Senha
+    <input type="password" name="senha" id="input-senha" placeholder="Digite sua senha" required>
+  </label>
+
+  <!-- 2 - Adicione um checkbox com o texto Lembre-me. -->
+  <label for="checkbox">
+    <input type="checkbox" name="lembrar" id="input-checkbox">Lembre-me
+  </label>
+  <br><br>
+  
+  <!-- 3 - Adicione um botão com o texto Entrar. -->
+    <label for="button-entrar">
+    <button type="submit" id="button-entrar">Entrar</button>
+  </label>
+
+  <!-- 4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha. -->
+  <!-- 5 - Adicione o atributo required para os campos de email e senha. -->
+  <!-- 6 - Adicione o atributo autocomplete="off" para o campo de email. 
+   - atributo autocomplete tem como possiveis valores: on e off; especifica se um elemento <input> deve ter o preenchimento automático habilitado-->
+
+  <!-- 7 - Adicione o atributo autofocus para o campo de email. 
+   - o atributo autofocus não recebe valor; especifica que um elemento <input> deve receber foco automaticamente quando a página carrega-->
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario-curriculo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</head>
+
+<body>
+  <header class="notification is-primary">
+    <h1 class="title is-1">Formulário para cadastro de currículo</h1>
+    <p class="subtitle is-3">Preencha os campos abaixo.</p>
+  </header>
+  <main>
+    <form method="get" id="cv-form" class="box">
+      <div class="field">
+        <fieldset class="field">
+          <div class="control">
+            <label class="label" for="name">Nome: </label>
+            <input class="input is-link" type="text" name="name" id="name" maxlength="40" required>
+          </div>
+          <div class="control">
+            <label class="label" for="email">Endereço de e-mail: </label>
+            <input class="input is-link" type="email" name="email" id="email" maxlength="50" required>
+          </div>
+          <div class="control">
+            <label class="label" for="cpf-number">CPF: </label>
+            <input class="input is-link" type="text" name="cpf" id="cpf-number" maxlength="11" required>
+          </div>
+          <div class="control">
+            <label class="label" for="address">Endereço: </label>
+            <input class="input is-link" type="text" name="address" id="address" maxlength="200" required>
+          </div>
+          <div class="control">
+            <label class="label" for="city">Cidade: </label>
+            <input class="input is-link" type="text" name="city" id="city" maxlength="200" required>
+          </div>
+          <div class="control">
+            <label class="label" for="state">Estado: </label>
+            <select class="select" name="state" id="state" required>
+              <option disabled selected value>Selecione seu estado</option>
+            </select>            
+          </div><br>
+          <div class="control">
+            <label class="radio label" for="houseType">Tipo de imóvel: </label>
+            <input class="is-link" type="radio" name="houseType" id="house" value="house" required>
+            <span>Casa</span>
+            <input class="is-link" type="radio" name="houseType" id="apartment" value="apartment" required>
+            <span>Apartamento</span>
+          </div>
+        </fieldset>
+        <fieldset class="field">
+          <div class="control">
+            <label class="label" for="resume">Resumo do currículo: </label>
+            <textarea class="textarea is-link" id="resume" name="resume" maxlength="1000" cols="100" rows="20" required></textarea>
+          </div>
+          <div class="control">
+            <label class="label" for="role">Cargo: </label>
+            <input class="input is-link" type="text" name="role" id="role" maxlength="40" required>
+          </div>
+          <div class="control">
+            <label class="label" for="roleDescription">Descrição do cargo: </label>
+            <input class="input is-link" type="text" id="roleDescription" maxlength="500" name="roleDescription" required>
+          </div>
+          <div class="control">
+            <label class="label" for="datepicker">Data de início: </label>
+            <input type="text" class="input is-link" name="startDate" value="" id="datepicker" required>
+          </div>
+        </fieldset>
+        <button class="button is-link" type="submit">Enviar</button>
+        <button class="button is-link is-light clear-button" type="button">Limpar</button>
+      </div>
+    </form>
+  </main>
+  <section class="form-data"></section>
+  <script src="exercicio.js" type="module"></script>
+ </body>
+
+</html>

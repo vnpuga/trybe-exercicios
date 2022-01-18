@@ -6,7 +6,7 @@ const maiorPalavra = (string) => {
   let tamanhoPalavra = 0;
   let resultado = '';
 
-  for(palavra of arrayString){ //for of percorre os valores de um array
+  for(palavra of arrayString){ //fo..of percorre os valores de um array
     if(palavra.length > tamanhoPalavra){
       tamanhoPalavra = palavra.length;
       resultado = palavra;

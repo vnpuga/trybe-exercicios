@@ -24,6 +24,19 @@ app.get('/authors/:id', async (req, res) => {
 	return res.status(200).json(author);
 });
 
+app.post('/authors', async (req, res) => {
+	const { first_name, middle_name, last_name } = req.body;
+
+	if (!Author.isValid(first_name, middle_name, last_name)) {
+		return res.status(400).json({ message: 'Dados inválidos' });
+	}
+
+	await Author.create(first_name, middle_name, last_name);
+
+	res.status(201).json({ message: 'Autor criado com sucesso! '});
+});
+
+
 app.get('/books', async (req, res) => {
   const { author_id } = req.query;
 
@@ -42,18 +55,6 @@ app.get('/books/:id', async (req, res) => {
 
 	return res.status(200).json(book);
 })
-
-app.post('/authors', async (req, res) => {
-	const { first_name, middle_name, last_name } = req.body;
-
-	if (!Author.isValid(first_name, middle_name, last_name)) {
-		return res.status(400).json({ message: 'Dados inválidos' });
-	}
-
-	await Author.create(first_name, middle_name, last_name);
-
-	res.status(201).json({ message: 'Autor criado com sucesso! '});
-});
 
 app.post('/books', async (req, res) => {
   const { title, author_id } = req.body;

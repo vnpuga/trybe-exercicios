@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const simpsonsUtils = require('./fs-utils');
+// const crypto = require('crypto');
 
 const app = express();
 app.use(bodyParser.json());
@@ -81,6 +82,7 @@ app.post('/simpsons', async (req, res) => {
   }
 });
 
+// console.log(crypto.randomBytes(8).toString('hex'));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
